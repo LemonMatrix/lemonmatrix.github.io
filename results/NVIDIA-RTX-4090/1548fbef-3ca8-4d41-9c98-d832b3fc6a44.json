@@ -1,0 +1,60 @@
+{
+  "schema_version": "0.1.0",
+  "run_id": "1548fbef-3ca8-4d41-9c98-d832b3fc6a44",
+  "timestamp": "2026-11-21T14:05:32.256756+00:00",
+  "model": {
+    "name": "gemma-3-4b-instruct-gguf-Q4_K_M",
+    "class": "dense",
+    "quantization": "Q4_K_M",
+    "context_length": 4096
+  },
+  "config": {
+    "compute_engine": "dgpu",
+    "backend": "llamacpp-vulkan",
+    "os": "windows",
+    "power_state": "plugged"
+  },
+  "environment": {
+    "cpu": "Intel(R) Core(TM) i9-14900K",
+    "device_model": "Intel(R) Core(TM) i9-14900K",
+    "dgpu": "NVIDIA GeForce RTX 4090",
+    "dgpu_family": "sm_89",
+    "driver_version": "621.24",
+    "lemonade_version": "2026.47.1",
+    "memory_gb": 64.0,
+    "os_version": "Windows 11 Pro 6.3 (Build 26300)",
+    "backend_version": "b12109"
+  },
+  "metrics": {
+    "prefill": {
+      "tokens_per_sec": 1013.4792743488395,
+      "stddev": 115.46569430605327,
+      "p95": 1181.5685425575386,
+      "ci95_half_width": 143.34661138164523
+    },
+    "decode": {
+      "tokens_per_sec": 206.93726940831166,
+      "inter_token_latency_ms": 4.832382310152561,
+      "stddev": 8.119871946859979,
+      "p95": 216.77664993594783,
+      "ci95_half_width": 10.080536348312076
+    },
+    "ttft_ms": 33.5478,
+    "trial_count": 5,
+    "peak_memory_gb": 4.250431060791016,
+    "prompt_sha256": "1c43b07d6b0d7624785966ffe2ddc076aa76b5fcf9357882ac1165f0073f43ee",
+    "prompt_tokens": 34,
+    "ttft_ms_stddev": 3.366765094270761,
+    "ttft_ms_ci95_half_width": 4.1797208294829264
+  },
+  "validity": {
+    "valid": true,
+    "warmup_discarded": true,
+    "thermal_ok": true,
+    "exclusive_run": true,
+    "model_reload_free": true,
+    "prompt_cache_free": true,
+    "other_models_resident": false,
+    "notes": "Lemonade doesn't report power draw for this instance; energy metrics omitted; exclusive_run verified via /api/v1/health polling (no other loaded model was busy)"
+  }
+}
