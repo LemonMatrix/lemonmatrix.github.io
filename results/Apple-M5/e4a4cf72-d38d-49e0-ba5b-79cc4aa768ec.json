@@ -1,0 +1,59 @@
+{
+  "schema_version": "0.1.0",
+  "run_id": "e4a4cf72-d38d-49e0-ba5b-79cc4aa768ec",
+  "timestamp": "2026-11-24T06:35:36.253657+00:00",
+  "model": {
+    "name": "Gemma-3-4b-it-GGUF",
+    "class": "dense",
+    "quantization": "Q4_K_M",
+    "context_length": 4096
+  },
+  "config": {
+    "compute_engine": "igpu",
+    "backend": "llamacpp-metal",
+    "os": "macos",
+    "power_state": "plugged"
+  },
+  "environment": {
+    "cpu": "Apple M5",
+    "device_model": "Apple M5",
+    "driver_version": "Metal",
+    "igpu": "Apple M5",
+    "lemonade_version": "2026.47.1",
+    "memory_gb": 32.0,
+    "os_version": "macOS 26.7.3 Darwin Kernel Version 25.6.0",
+    "backend_version": "b12109"
+  },
+  "metrics": {
+    "prefill": {
+      "tokens_per_sec": 292.0671135866185,
+      "stddev": 3.550904950732039,
+      "p95": 296.57334665920314,
+      "ci95_half_width": 4.4083240055402415
+    },
+    "decode": {
+      "tokens_per_sec": 43.46800735227516,
+      "inter_token_latency_ms": 23.005425390121065,
+      "stddev": 0.5172072593598228,
+      "p95": 44.037388127579376,
+      "ci95_half_width": 0.642094679781712
+    },
+    "ttft_ms": 116.41159999999999,
+    "trial_count": 5,
+    "peak_memory_gb": 23.5,
+    "prompt_sha256": "1c43b07d6b0d7624785966ffe2ddc076aa76b5fcf9357882ac1165f0073f43ee",
+    "prompt_tokens": 34,
+    "ttft_ms_stddev": 1.4078056684073996,
+    "ttft_ms_ci95_half_width": 1.7477413812207365
+  },
+  "validity": {
+    "valid": true,
+    "warmup_discarded": true,
+    "thermal_ok": true,
+    "exclusive_run": true,
+    "model_reload_free": true,
+    "prompt_cache_free": true,
+    "other_models_resident": false,
+    "notes": "Lemonade doesn't report power draw for this instance; energy metrics omitted; peak_memory_gb is host RAM, not VRAM -- vram_gb was unavailable from this instance; exclusive_run verified via /api/v1/health polling (no other loaded model was busy)"
+  }
+}

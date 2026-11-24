@@ -1,0 +1,41 @@
+{
+  "schema_version": "0.1.0",
+  "run_type": "classify",
+  "run_id": "cda0751f-4701-482c-99ae-9091f297f141",
+  "timestamp": "2026-11-24T07:14:19.024475+00:00",
+  "model": {
+    "name": "Phishing-Email-Detection-ONNX",
+    "checkpoint": "lemonade-sdk/phishing-email-detection-distilbert-ONNX"
+  },
+  "config": {
+    "compute_engine": "cpu",
+    "backend": "onnxruntime-cpu",
+    "os": "macos",
+    "power_state": "plugged"
+  },
+  "environment": {
+    "cpu": "Apple M5",
+    "device_model": "Apple M5",
+    "driver_version": "Metal",
+    "igpu": "Apple M5",
+    "lemonade_version": "2026.47.1",
+    "memory_gb": 32.0,
+    "os_version": "macOS 26.7.3 Darwin Kernel Version 25.6.0"
+  },
+  "metrics": {
+    "latency_ms": 4.537283186800778,
+    "classifications_per_sec": 220.39620601796653,
+    "trial_count": 5,
+    "input_chars": 31,
+    "latency_ms_stddev": 0.5674097103318116,
+    "latency_ms_p95": 5.113933398388326,
+    "peak_memory_gb": 16.2
+  },
+  "validity": {
+    "valid": true,
+    "warmup_discarded": true,
+    "exclusive_run": true,
+    "model_reload_free": true,
+    "notes": "exclusive_run verified via /api/v1/health polling (no other loaded model was busy)"
+  }
+}
