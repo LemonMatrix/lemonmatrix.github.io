@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1.0",
+  "run_type": "embeddings",
+  "run_id": "28bb6742-8d16-471f-ab6d-1163807ff7b5",
+  "timestamp": "2026-11-24T07:13:34.445683+00:00",
+  "model": {
+    "name": "Qwen3-Embedding-4B-GGUF",
+    "checkpoint": "Qwen/Qwen3-Embedding-4B-GGUF:Qwen3-Embedding-4B-Q8_0.gguf"
+  },
+  "config": {
+    "compute_engine": "igpu",
+    "backend": "llamacpp-metal",
+    "os": "macos",
+    "power_state": "plugged"
+  },
+  "environment": {
+    "cpu": "Apple M5",
+    "device_model": "Apple M5",
+    "driver_version": "Metal",
+    "igpu": "Apple M5",
+    "lemonade_version": "2026.47.1",
+    "memory_gb": 32.0,
+    "os_version": "macOS 26.7.3 Darwin Kernel Version 25.6.0",
+    "backend_version": "b12109"
+  },
+  "metrics": {
+    "latency_ms": 88.8134588021785,
+    "embeddings_per_sec": 22.51910945676335,
+    "trial_count": 5,
+    "batch_size": 2,
+    "input_chars_total": 28,
+    "latency_ms_stddev": 1.022107445592962,
+    "latency_ms_p95": 90.18103400012478,
+    "embedding_dim": 2560,
+    "peak_memory_gb": 23.1
+  },
+  "validity": {
+    "valid": true,
+    "warmup_discarded": true,
+    "exclusive_run": true,
+    "model_reload_free": true,
+    "notes": "exclusive_run verified via /api/v1/health polling (no other loaded model was busy)"
+  }
+}

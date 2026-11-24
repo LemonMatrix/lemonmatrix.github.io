@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.1.0",
+  "run_type": "stt",
+  "run_id": "715f64e1-82df-4810-95d8-52b3d7b15b23",
+  "timestamp": "2026-11-24T07:11:29.307281+00:00",
+  "model": {
+    "name": "Whisper-Large-v3-Turbo",
+    "checkpoint": "ggerganov/whisper.cpp:ggml-large-v3-turbo.bin"
+  },
+  "config": {
+    "compute_engine": "igpu",
+    "backend": "whispercpp-metal",
+    "os": "macos",
+    "power_state": "plugged"
+  },
+  "environment": {
+    "cpu": "Apple M5",
+    "device_model": "Apple M5",
+    "driver_version": "Metal",
+    "igpu": "Apple M5",
+    "lemonade_version": "2026.47.1",
+    "memory_gb": 32.0,
+    "os_version": "macOS 26.7.3 Darwin Kernel Version 25.6.0",
+    "backend_version": "v1.8.4"
+  },
+  "metrics": {
+    "transcription_time_ms": 1748.693333414849,
+    "audio_duration_s": 2.963125,
+    "real_time_factor": 1.694479496993111,
+    "trial_count": 5,
+    "transcription_time_ms_stddev": 2.8099365067551982,
+    "transcription_time_ms_p95": 1751.987966382876,
+    "peak_memory_gb": 19.9
+  },
+  "validity": {
+    "valid": true,
+    "warmup_discarded": true,
+    "exclusive_run": true,
+    "model_reload_free": true,
+    "notes": "exclusive_run verified via /api/v1/health polling (no other loaded model was busy)"
+  }
+}
